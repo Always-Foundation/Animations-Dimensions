@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/addons/p5.sound.min.js"></script>
+	<script src="ExpantaNum.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>   
+	
+	<p align="center"><span id="fafo">???</span>
+		
+		<br>
+		Speed: <span id="value"></span>
+	<br>
+		
+				<input type="text" placeholder="0" id="change2"></input><button onclick="speed = document.getElementById('change2').value">Change "speed" value</button>
+		
+		<br>
+		<button onclick="num=0">Reset</button> <button onclick="speed*=2">Multiply speed by 2</button><button onclick="speed/=2">Divide speed by 2</button><button onclick="speed=1">speed=1</button>
+		
+				<br>
+		Millisecond Interval: <span id="interval">...</span>, returning <span id="intervalpersecond">an unknown</span> amount of intervals per second.
+	<br>
+		
+		<input type="text" placeholder="10" id="ii2"></input><button onclick="changeinterval();">Change Interval</button>
+	
+	<br>
+	
+	num-variable: <span id="myv">...</span>
+	<br>
+		
+		<input type="text" placeholder="0" id="change1"></input><button onclick="num = document.getElementById('change1').value">Change "t" value</button>
+
+	
+	<br><br>
+	
+	Progress: <span id="aaa~~"></span>%
+	<br>
+	Precision: <span id="prec"></span>
+	<br>
+	<button onclick="precision+=1">Increase Precision</button>
+  <button onclick="precision-=1">Decrease Precision</button><br><br>
+	Time Remaining: <span id="dbd"></span>:<span id="dbdbd"></span>:<span id="dbdbdbd"></span></p>
+	
+</body>
+	
+
+
+</html>
