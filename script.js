@@ -1,6 +1,6 @@
 //2,200 sketches!!!
 var num = 0;
-var speed = 3.3; 
+var speed = 79.3; 
 var msinterval = 10;
 var precision = 4;
 function D(x){return new ExpantaNum(x)}
@@ -90,7 +90,19 @@ function valueNumber(x){
 	let number = ExpantaNum.expansion(10,j).floor().toString();
 	return "R^"+number
 }
-		
+		else if(x < 28607152){
+	let i = (20 + ((x - 28607152) / 50000));
+	let j = ExpantaNum.pow(2,i).floor()
+	let number = ExpantaNum.expansion(10,j).floor().toString();
+	return "SE^"+number
+}
+			else if(x < 38607152){
+	let i = (20 + ((x - 34607152) / 50000));
+	let j = ExpantaNum.pow(2,i).floor()
+	let number = ExpantaNum.expansion(10,j).floor().toString();
+	return "Together^"+number
+}
+				
 	else return "Infinity"
 	}
 
